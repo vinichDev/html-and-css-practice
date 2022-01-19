@@ -1,0 +1,44 @@
+.services-bg {
+  background-color: #eee;
+}
+
+.service {
+  display: flex;
+
+  @media @screen-only-s {
+    margin-bottom: 30px;
+
+    &_last {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    height: 40px;
+    width: 40px;
+
+    @media @screen-gt-m {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  &__text {
+    margin: auto 0 auto 20px;
+    line-height: 20px;
+
+    @media @screen-gt-s {
+      margin-left: 10px;
+    }
+
+    @media @screen-gt-m {
+      margin-left: 30px;
+    }
+
+    @media @screen-only-s {
+      &__display-br-1 {
+        display: none;
+      }
+    }
+  }
+}
