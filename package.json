@@ -1,8 +1,8 @@
 {
     "name": "html-and-css-practice",
     "version": "1.0.0",
-    "homepage": "https://leonidfeskov.github.io/html-and-css-practice/",
-    "author": "Leonid Feskov",
+    "homepage": "https://vinichDev.github.io/html-and-css-practice/",
+    "author": "Alexander Vinichenko",
     "license": "MIT",
     "scripts": {
         "start": "parcel index.html",
