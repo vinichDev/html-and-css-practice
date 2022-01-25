@@ -1,0 +1,30 @@
+.app {
+  display: flex;
+  margin-top: 30px;
+  margin-left: -5px;
+  margin-right: -5px;
+
+  @media @screen-gt-s {
+    justify-content: right;
+    margin-top: 0;
+  }
+
+  &__link {
+    padding: 0 5px;
+    cursor: pointer;
+  }
+}
+
+@app-icons: app-store, google-play;
+
+.app-icon {
+  display: block;
+  width: 140px;
+  height: 40px;
+
+  each(@app-icons, {
+    &_@{value} {
+      background-image: url('@{value}.svg');
+    }
+  })
+}

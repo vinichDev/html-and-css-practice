@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+
+  @media @screen-gt-s {
+    margin-top: 4px;
+  }
+
+  &__link {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+}
+
+@social-icons: facebook, twitter, vk, instagram;
+
+.social-icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+
+  each(@social-icons, {
+    &_@{value} {
+      background-image: url('@{value}.svg');
+    }
+  })
+}
